@@ -9,89 +9,126 @@
     <link rel="apple-touch-icon" href="./common/image/logo-032.png" />
     <link rel="icon" href="./common/image/logo-032.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/d13075201a.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ea82d6a2f34a0efaebcf5d5ce186494d"></script>
+    
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <div id="top-logo">
-                <img src="./common/image/logo-01.png" alt="balance-play-logo" onclick="goToScroll('main-section')"/>
-            </div>
+            
             <nav class="navbar">
-                <ul>
+
+                <div id="top-logo">
+                    <img src="./common/image/logo-01.png" alt="balance-play-logo" onclick="goToScroll('main-section')"/>
+                </div>
+
+                <ul class="navbar-menu">
+                   
                     <li onclick="goToScroll('section1')">About</li>
                     <li onclick="goToScroll('section2')">Product</li>
                     <li onclick="goToScroll('section3')">Partnership</li>
-                    <li onclick="goToScroll('section4')">Center</li>
+                    
                 </ul>
+                </div>
+
+                
             </nav>
         </header>
 
         <main>
             <section class="main-section" >
-                <!-- <div class="main-video"> -->
-                    <div class="main-img" >
-                        <img src="./common/image/istockphoto-544354130-170667a.jpg" />
-                    </div>
-                    <div class="main-content">
-                        <h1 id="main-title">Balance Play</h1>
-                        <p id="main-sub-title">Hello, we are Balance Play</p>
-                    </div>
-                 <!--    <video autoplay="autoplay" loop="loop" muted="muted">
+
+                <div class="main-img" >
+                    <img src="./common/image/istockphoto-544354130-170667a.jpg" />
+                </div>
+                <div class="main-content">
+                    <h1 id="main-title">Balance Play</h1>
+                    <p id="main-sub-title">Hello, we are Balance Play</p>
+                </div>
+                <div class="main-video">
+                  <!--   <video autoplay="autoplay" loop="loop" muted="muted">
                         <source src="./common/image/main-video.mp4">
                     </video> -->
                 </div>              
                    
             </section>
 
-            <section class="service-section">
+            <section class="program-section">
 
-                <h2 class="service-section-title">OUR SERVICE</h2>
-                <div class="service-img" >
+                <h2 class="program-section-title" data-aos="fade-up"  
+                data-aos-duration="1000"  data-aos-offset="0"  >BalancePlay Program</h2>
+                <div class="program-img" >
                     <ul>
                     <li class="text-img">
-                        <img src="./common/image/service_img1.jpg" alt="유아.청소년 운동서비스" />
-                        <p class="explain">유아.청소년 운동서비스</p>
+                        <img src="./common/image/program_img1.jpg" alt="유아.청소년 운동서비스" />
+                        <div class="explain-box">
+                            <p class="explain">유아.청소년 운동서비스</p>
+                        </div>
+                        
                     </li>
                     <li class="text-img">
-                        <img src="./common/image/service_img2.jpg" alt="신체교육" />
-                        <p class="explain">신체교육</p>
+                        <img src="./common/image/program_img2.jpg" alt="신체교육" />
+                        <div class="explain-box">
+                            <p class="explain">신체교육</p>
+                        </div>
+                        
                     </li>
                     <li class="text-img">
-                        <img src="./common/image/service_img3.jpg" alt="신체발달" />
-                        <p class="explain">신체발달</p>
+                        <img src="./common/image/program_img3.jpg" alt="신체발달" />
+                        <div class="explain-box">
+                            <p class="explain">신체발달</p>
+                        </div>
+                        
                     </li>
                     <li class="text-img">
-                        <img src="./common/image/service_img4.jpg" alt="신체성장지표" />
-                        <p class="explain">신체성장지표</p>
+                        <img src="./common/image/program_img4.jpg" alt="신체성장지표" />
+                        <div class="explain-box">
+                            <p class="explain">신체성장지표</p>
+                        </div>
+                        
                     </li>
                     <li class="text-img">
-                        <img src="./common/image/service_img5.jpg" alt="AI분석" />
-                        <p class="explain">AI분석</p>
+                        <img src="./common/image/program_img5.jpg" alt="AI분석" />
+                        <div class="explain-box">
+                            <p class="explain">AI분석</p>
+                        </div>
+                        
                     </li>
                     <li class="text-img">
-                        <img src="./common/image/service_img6.jpg" alt="인공지능" />
-                        <p class="explain">인공지능</p>
+                        <img src="./common/image/program_img6.jpg" alt="인공지능" />
+                        <div class="explain-box">
+                            <p class="explain">인공지능</p>
+                        </div>
+                       
                     </li>
                     <li class="text-img">
-                        <img src="./common/image/service_img7.jpg" alt="3D신체측정" />
-                        <p class="explain">3D신체측정</p>
+                        <img src="./common/image/program_img7.jpg" alt="3D신체측정" />
+                        <div class="explain-box">
+                            <p class="explain">3D신체측정</p>
+                        </div>
+                       
                     </li>
                     <li class="text-img">
-                        <img src="./common/image/service_img8.jpg" alt="운동 솔루션" />
-                        <p class="explain">운동 솔루션</p>
+                        <img src="./common/image/program_img8.jpg" alt="운동 솔루션" />
+                        <div class="explain-box">
+                            <p class="explain">운동 솔루션</p>
+                        </div>
+                        
                     </li>
                 </ul>
                 </div>
             </section>
 
-            <section class="section1" id="section1">
+            <section class="section1">
                 <div class="container">
-                <h2 class="section-title">ABOUT BALANCE PLAY</h2>
+                <h2 class="section-title" 
+               >ABOUT BALANCE PLAY</h2>
                 <div class="content-box">
-                    <div class="content-img">
+                    <div class="content-img"  data-aos="fade-in"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
                         <img src="./common/image/istockphoto-1284372466-612x612.jpg"/>
                     </div>
                     <div class="content-desc">
@@ -121,54 +158,47 @@
                         <li class="history-item">
                             <h2>2021.08</h2>
                             <div class="history-item-contents">밸런스플레이 특허 등록
-                                <!-- <img src="./common/image/history_img1.png" alt="밸런스플레이 특허등록증"/> -->
                             </div>
                         </li>
                         <li class="history-item">
                             <h2>2022.03</h2>
                             <div class="history-item-contents">유아,소아 및 청소년을 위한 AI 신체 성장 가이드 시스템 특허 등록 
-                               <!--  <img src="./common/image/history_img2.png" alt="시스템 특허 증록증"/> -->
                             </div>
                         </li>
                         <li class="history-item">
                             <h2>2022.09</h2>
                             <div class="history-item-contents">한국산업기술진흥협회 인증서 발급
-                               <!--  <img src="./common/image/history_img3.png" /> -->
                             </div>
                         </li>
                         <li class="history-item">
                             <h2>2022.12</h2>
                             <div class="history-item-contents">한국저작권위원회 밸런스플레이 회원관리프로그램 저작권 등록
                                 <div class="history4-img">
-                                <!-- <img src="./common/image/history_img4.png" />
-                                <img src="./common/image/history_img4-2.png" /> -->
                                 </div>
                             </div>
                         </li>
                         <li class="history-item">
                             <h2>2023.01</h2>
                             <div class="history-item-contents">중소벤처기업부장관 인증획득
-                               <!--  <img src="./common/image/history_img5.png" /> -->
                             </div>
                         </li>
                         <li class="history-item">
                             <h2>2023.01</h2>
                             <div class="history-item-contents">기업평가본부 기업평가실
-                                <!-- <img src="./common/image/history_img6.png" /> -->
                             </div>
                         </li>
                        
                     </ol>
                 </div>
-                
-
                 </div>
             </section>
-            <section class="section2" id="section2">
+
+
+            <section class="section2">
                     <div class="container">
                     <h2 class="section-title">We are product is...</h2>
                     <div class="content-box">
-                        <div class="content-desc">
+                        <div class="content-desc" id="first-desc">
                             <strong>주식회사 밸런스플레이는 </strong>
                             IT 아동 청소년 성장 발달 회원관리 프로그램 개발 업체입니다.
                             밸런스 기질 검사, 밸런스 감각 검사, 밸런스 발달 검사, 밸런스 대근육 발달 검사를 개발하고 보급하는 업체입니다.
@@ -178,10 +208,12 @@
                     </div>
              
 
-                    <div class="content-box">                        
-                        <div class="content-desc">
-                            <h2>유아 청소년의 프리미엄관리 서비스 “밸런스 멤버십”</h2>  
-                            <button type="button" class="modal-btn" >자세히 보기</button>                      
+                    <div class="content-box" id="balance_membership_box" data-aos="fade-up"  
+                    data-aos-duration="1500" >                       
+                        <div class="content-desc"  >
+                            <h2>유아 청소년의 
+                                프리미엄관리 서비스 “밸런스 멤버십”</h2>  
+                            <button type="button" class="modal-btn" >자세히보기</button>                      
                         </div>
                         <div class="content-img">
                             <img src="./common/image/program1_img.png" />
@@ -206,12 +238,12 @@
                     </div>
                     <!-- modal 1  -->
 
-                    <div class="content-box">  
+                    <div class="content-box" data-aos="fade-up"  
+                    data-aos-duration="1500"  >  
                         <div class="content-img">
                             <img src="./common/image/scan_fit2.png"/>
-                           <!--  <img src="./common/image/scanfit_img.png"/> -->
                         </div>                      
-                        <div class="content-desc">
+                        <div class="content-desc"  >
                             <h2>3D 체형분석 프로그램 “스캔핏”</h2>  
                             <button type="button" class="modal-btn">자세히 보기</button>                         
                         </div>  
@@ -221,11 +253,11 @@
                           <div class="modal-window">
                             <div class="modal-header">
                                 <h1>3D 체형분석 프로그램 “스캔핏”</h1>
-                                <button type="button" class="modal-close-btn" data-modal-close><i class="fa-solid fa-xmark"><i class=blind>창닫기</i></i></button>
+                                <button type="button" class="modal-close-btn"  data-modal-close><i class="fa-solid fa-xmark"><i class=blind>창닫기</i></i></button>
                             </div>
                             <div class="video-box">
                                 <video  class="modal-video" src="./common/image/analysisprogram.mp4" width="600px" height="400px" controls poster="./common/image/analysisprogram_img.png"></video>
-                                <video  class="modal-video" src="./common/image/analysisprogram2.mp4" width="600px" height="400px" controls poster="./common/image/analysisprogram2_img.png"></video>
+                                <!-- <video  class="modal-video" src="./common/image/analysisprogram2.mp4" width="600px" height="400px" controls poster="./common/image/analysisprogram2_img.png"></video> -->
                             </div>
                             <div class="modal-content"> 
                                 <p>스캔핏은 모바일 앱 3D 신체 스캔 기술을 이용한 정형, 비정형 운동자세 트레이닝 분석 및 유아, 소아, 청소년을 위한 신체 성장 가이드 모듈이 포함된 퍼스널 마이닝마인즈 운동 서비스 플랫폼입니다. </p>       
@@ -235,7 +267,8 @@
                         </div>
 
                       <!-- modal 2  -->
-                    <div class="content-box">
+                    <div class="content-box"  data-aos="fade-up"  
+                    data-aos-duration="1500" >
                         <div class="content-desc">
                             <h2>운동놀이학교</h2> 
                             <button type="button" class="modal-btn">자세히 보기</button>                          
@@ -252,9 +285,11 @@
                                 <button type="button" class="modal-close-btn" ><i class="fa-solid fa-xmark"><i class=blind>창닫기</i></i></button>
                             </div>
                             <div class="video-box">                                  
-                                <video  class="modal-video" src="./common/image/playschool1.mp4" width="600px" height="400px" controls poster="./common/image/playschool1_img.png"></video>
+                               <!--  <video  class="modal-video" src="./common/image/playschool1.mp4" width="600px" height="400px" controls poster="./common/image/playschool1_img.png"></video> -->
                                 <video  class="modal-video" src="./common/image/playschool2.mp4" width="600px" height="400px" controls poster="./common/image/playschool2_img.png"></video>
                             </div>
+                            
+                            
                             <div class="modal-content"> 
                                 <p> 밸런스플레이 운동놀이학교는 밸런스플레이에서 운영하는 오프라인 신체교육기관이며, 유아∙청소년기에 필요한 성장발달을 위해 맞춤 교육프로그램을 제공하는 프리미엄신체교육기관입니다. 또한  9가지 검사를 통해 아이의 성향과 발달에 맞춰 수업을 진행하고 있으며,  체육교육/발달재활특수체육 석∙박사 경력을 가진 지도진으로 구성되어 있습니다. 유아 청소년에게 필요한 성장을 위한 오프라인 프리미엄 신체교육기관입니다. </p>       
                                                
@@ -263,10 +298,10 @@
                             
                             <div class="modal-center-box">
                                 <div class="container">
-                                <h2 class="section-title">Center</h2>
-                                <div class="center-box">                                    
+                                <h2>Center</h2>
+                                <div class="center-box" id="modal_center_box">                                    
                                         <div class="center-title">역북점</div>
-                                        <img src="./common/image/location-img.png" /> <!-- 주소 api 넣기 -->
+                                        <div id="map1" style="width:500px;height:400px; margin-left:130px"></div> <!-- 주소 api 넣기 -->
                                         <div class="center-address">
                                             <p>주소</p>
                                             <p>경기도 용인시 처인구 역북동 골든프라자 2 4층 404</p>
@@ -276,11 +311,11 @@
                                             <p><i class="fa-solid fa-phone"></i>031-335-3244</p>
                                             <p><i class="fa-solid fa-mobile-screen"></i>010-9212-7995</p>
                                         </div>
-                                  
+                                </div>
 
                                         <div class="center-box"> 
                                         <div class="center-title">동백점</div>
-                                        <img src="./common/image/location-img2.png" />  <!-- 주소 api 넣기 -->
+                                        <div id="map2" style="width:500px;height:400px; margin-left:130px"></div> <!-- 주소 api 넣기 -->
                                         <div class="center-address">
                                             <p>주소</p>
                                             <p>경기도 용인시 기흥구 동백죽전대로 444 5층 5008호</p>
@@ -294,17 +329,18 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        </div>
+                      </div>
+                       
                        <!-- modal 3  -->
             </div>
             </section>
 
-            <section class="section3" id="section3">
+            <section class="section3" >
                     <div class="container">
                     <h2 class="section-title">Partnership</h2>
                     <p>밸런스 플레이와 함께 하는 산학협력 및 MOU 기관</p>
-                    <div class="partnership-container">
+                    <div class="partnership-container" data-aos="fade-in"  
+                    data-aos-duration="1000"  >
                         <div class="partnership-imgBox1">
                             <img src="./common/image/corporation-list01.png"/>
                             <img src="./common/image/corporation-list02.png"/>
@@ -319,16 +355,12 @@
                         <img src="./common/image/corporation-list08.png"/>
                         <img src="./common/image/corporation-list09.png"/>
                         <img src="./common/image/corporation-list10.png"/>
-                        <img src="./common/image/corporation-list11.png"/>
+                      <!--   <img src="./common/image/corporation-list11.png"/> -->
                         </div>
                     </div>
                 </div>
             </section>
-
-
-        </main>
-     
-      
+        </main>   
 
         <footer>
             <div class="inner">
@@ -352,10 +384,10 @@
                 <div class="bottom-right">
                      <div class="navbar">
                 <ul>
+                    
                     <li onclick="goToScroll('section1')">About</li>
                     <li onclick="goToScroll('section2')">Product</li>
                     <li onclick="goToScroll('section3')">Partnership</li>
-                    <li onclick="goToScroll('section4')">Center</li>
                 </ul>
                 </div>
                 <div class="company-info">
@@ -375,7 +407,12 @@
 
     </div>
     <script>
-        AOS.init();
+       AOS.init({
+			once: true,
+		});
+		$(window).on('load', function () {
+            AOS.refresh();
+        });
       </script>
 
 
@@ -383,22 +420,21 @@
 
 
 //메뉴 버튼 누르면 해당 섹션으로 이동 
-    function goToScroll(name) {
-
-        /* var menuHeight = document.querySelector(".navbar").offsetHeight; */
+   
+function goToScroll(name) {
        var location = document.querySelector("." + name).offsetTop;
-        window.scrollTo({top: location -  170, behavior: 'smooth'});
-    };
-    
+        window.scrollTo({top: location -  160, behavior: 'smooth'});
+};
 
 //모달 창 
 
     var modals = document.getElementsByClassName("modal");   
     var modalBtn = document.getElementsByClassName("modal-btn");  
     var closeBtn = document.getElementsByClassName("modal-close-btn");
-    var video = document.getElementsByClassName("modal-video")
-    var funcs = [];
-   
+    var video = document.getElementsByClassName("modal-video");
+    var funcs1 = []; 
+
+       
 
         function Modal(num) {
         return function() {
@@ -406,35 +442,67 @@
             modalBtn[num].onclick =  function() {
                 modals[num].style.display = "block";
                 document.body.style.overflow = "hidden"; //외부 스크롤 막기
+          
             };
-        
+          
             // modal 닫기
             closeBtn[num].onclick = function() {
                 modals[num].style.display = "none";
                 document.body.style.overflow = "unset"; //외부스크롤 차단 해제
-                video.pause();
+                video[num].pause(); 
             };
         };
         } 
 
+    
         // 모달의 수 만큼 함수 호출 
         for(var i = 0; i < modalBtn.length; i++) {
-        funcs[i] = Modal(i);
+        funcs1[i] = Modal(i);
+        
         }
         
         // Modal 수만큼 funcs 호출
         for(var j = 0; j < modalBtn.length; j++) {
-        funcs[j]();
+        funcs1[j]();
         }
-        
+
         
         // Modal 영역 밖 클릭시 모달창 닫기 
         window.onclick = function(event) {
-        if (event.target.className == "modal") {
-            event.target.style.display = "none";
+        if (event.target.className == "modal") {       
+            document.body.style.overflow = "unset";   
+            
         }
-        };
+         };
+
+         $(window).scroll(function () { 
+	var scrollValue = $(document).scrollTop(); 
+    console.log(scrollValue); 
+});
+
+
+      
+
   </script>
+
+<script>
+
+var container1 = document.getElementById('map1'); //지도를 담을 영역의 DOM 레퍼런스
+var container2 = document.getElementById('map2');
+
+
+var options1 = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng( 37.23105758900485, 127.18661473670345), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
+var options2 = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(37.2310395326424, 127.18663722950797), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
+
+var map1 = new kakao.maps.Map(container1, options1); //지도 생성 및 객체 리턴
+var map2 = new kakao.maps.Map(container1, options2); //지도 생성 및 객체 리턴
+</script>
 
 
 
