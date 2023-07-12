@@ -5,8 +5,8 @@
 ## - 홈페이지 디자인 기간 
 2023.03.05~ 03.20
 
-<img src="https://github.com/Saeunnnnni/balancePlay_e/assets/108113552/5c63e880-da47-4c60-b1fe-e24746fd6e19
-" />
+![image](https://github.com/Saeunnnnni/balancePlay_e/assets/108113552/b011727c-1386-4c66-80dc-3aa426310cde)
+
 
 ## - 개발기간
 2023.03.28 ~ 04.24
