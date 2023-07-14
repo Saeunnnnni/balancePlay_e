@@ -5,6 +5,11 @@
 ## - 홈페이지 디자인 기간 
 2023.03.05~ 03.20
 
+[기존 홈페이지]
+
+![image](https://github.com/Saeunnnnni/balancePlay_e/assets/108113552/946d583a-8a5e-42a7-91a8-d75a916506bc)
+
+[리뉴얼 페이지]
 ![image](https://github.com/Saeunnnnni/balancePlay_e/assets/108113552/b011727c-1386-4c66-80dc-3aa426310cde)
 
 
