@@ -49,7 +49,11 @@
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"  style="height:30px"/>
 <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white" style="height:30px"/>
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=white"  style="height:30px"/>
+ <img src="https://img.shields.io/badge/jquery-0769AD?style=flat&logo=jQuery&logoColor=white"  style="height:30px"/>
 </div>
+
+- AOS 라이브러리 적용 : 페이지의 시각적 효과를 더욱 강화하기 위해 AOS 라이브러리를 활용
+
 
 <br/>
 <br/>
